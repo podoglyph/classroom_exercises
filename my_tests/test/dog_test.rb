@@ -8,5 +8,10 @@ class DogTest < Minitest::Test
     dog = Dog.new("Stark")
     assert_equal "Stark", dog.name
   end
+
+  def test_is_happy
+    dog = Dog.new("Stark")
+    assert_equal true, dog.wagging_tail?
+  end
   
 end
